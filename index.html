@@ -1,0 +1,141 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Digital Health-Card</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			function pageRedirect(){
+			  window.location.href=("hms/user-login.php");
+			}
+			function pageRedirect1(){
+			  window.location.href=("hms/doctor/");
+			}
+		  </script>
+		  <style>
+			  html{
+				font-family: 'Montserrat', sans-serif;
+			  }
+			  body{
+				  background-image: url('./images/bill.png');
+				  background-size:cover;
+            
+			  }
+			  @keyframes fade-in-1 {
+              0%{
+                  opacity: 0;
+                  transform: translate(-200px);
+              }
+              100%{
+                transform: translate(0);
+                opacity: 1;
+              }
+            }
+            .fade-in-1{
+              animation: fade-in-1 1.2s;
+              animation-fill-mode: backwards;
+            }
+            @keyframes fade-in-2 {
+              0%{
+                  opacity: 0;
+                  transform: translate(120px);
+              }
+              100%{
+                transform: translate(0);
+                opacity: 1;
+              }
+            }
+            .fade-in-2{
+              animation: fade-in-2 1.2s;
+              animation-fill-mode: backwards;
+            }
+			  #para{
+				  padding-top:120px ;
+				  padding-left:40px;
+				  font-size: 40px;
+			  }
+			  #bill{
+				  color: #5367ff;
+				  font-weight: bold;
+				padding-left:700px;
+				font-size:25px;
+				font-style: italic;
+			  }
+			  #doc{
+				  padding: 0px;
+			  }
+			  #user{
+				  padding-top:40px ;
+				  padding-left: 60px;
+			  }
+			  #uslgn{
+				margin:40px 0px 0px 80px;
+                 padding: 8px 60px;
+                 border-radius: 35px;
+                 color:white;
+                 background-color:#5367ff;
+                 font-size: 30px;
+				 border-color:#5367ff ;
+                 outline: none;
+			  }
+			  #dclgn{
+				margin:40px 0px 0px 80px;
+                 padding: 8px 60px;
+                 border-radius: 45px;
+                 color: white;
+				 background-color:rgb(10, 199, 155);
+                 border-color: rgb(4, 212, 164);
+                 font-size: 30px;
+                 outline: none;
+			  }
+			  #uslgn:hover{
+                 background-color:white;
+                 color:#3046ee;
+				 border: solid 1.5px;
+				 border-color: #5367ff;
+                 outline: none !important;
+             }
+			 #dclgn:hover{
+                 background-color:white;
+                 color:#1a32ec;
+                 border: solid 1.5px;
+				 border-color:#5367ff;
+                 outline: none !important;
+             }
+		  </style>
+
+	</head>
+	<body>
+			<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+				<a class="navbar-brand" href="#">Digital Health Card</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-item nav-link active" href="#" style="font-weight: 500;">Home <span class="sr-only">(current)</span></a>
+				
+					<a class="nav-item nav-link" href="hms/admin" style="font-weight: 500;">Admin</a>
+
+				  </div>
+				</div>
+			  </nav>
+
+			  
+				<div id="user" style="display: inline-block;">
+					<p id="para" class="fade-in-1"><strong>"If Your Business not on the Internet,<br>Then your Business will Be out of Business"</strong></p>
+					<p id="bill">-Bill Gates </p>
+					<button id="uslgn" type="button" class="btn btn-primary btn-lg, fade-in-2" onclick="pageRedirect()">User Login</button> 
+					<span></span>
+					<button id="dclgn" type="button" class="btn btn-primar btn-lg, fade-in-2" onclick="pageRedirect1()">Doctor Login</button>  
+				</div>	
+				<div id="doc" style="display: inline-block;">
+				</div>	
+				
+	</body>
+</html>
+
